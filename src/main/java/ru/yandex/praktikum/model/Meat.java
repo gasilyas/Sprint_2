@@ -1,4 +1,4 @@
 package ru.yandex.praktikum.model;
 
-public class Meat {
+public class Meat extends Food {
 }
