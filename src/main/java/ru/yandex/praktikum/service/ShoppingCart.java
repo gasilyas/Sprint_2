@@ -22,7 +22,9 @@ public class ShoppingCart {
             float discount = groceries[i].getDiscount();
                 if (discount > 0) {
                     totalCostDisc += groceries[i].getPrice() * groceries[i].getAmount() * (groceries[i].getDiscount() / 100);
-        }
+        } else {
+                    totalCostDisc += groceries[i].getPrice() * groceries[i].getAmount();
+                }
     }
         return totalCostDisc;
 }
