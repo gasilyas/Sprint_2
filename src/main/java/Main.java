@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Food meat = new Meat(5, 100);
         Food redApples = new Apple(10, 50, Colour.RED_COLOUR);
-        Food greenApples = new Apple(10, 50, Colour.GREEN_COLOUR);
+        Food greenApples = new Apple(8, 60, Colour.GREEN_COLOUR);
 
         Food[] groceries = new Food[] {meat, redApples, greenApples};
         ShoppingCart cart = new ShoppingCart(groceries);
