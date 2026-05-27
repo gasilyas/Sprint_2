@@ -15,6 +15,6 @@ public class Main {
 
         System.out.println("Общая стоимость товаров без скидки составляет: " + cart.getOverallCost() + " руб.");
         System.out.println("Общая стоимость товаров с учетом скидки составляет: " + cart.getOverallCostWithDiscount() + " руб.");
-        System.out.println("Общая стоимость товаров для вегетарианцев составляет: " + cart.getOverallCostForVegetarian() + " руб.");
+        System.out.println("Общая стоимость товаров для вегетарианцев без скидки составляет: " + cart.getOverallCostForVegetarian() + " руб.");
     }
 }
