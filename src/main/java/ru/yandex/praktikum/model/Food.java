@@ -16,7 +16,7 @@ public abstract class Food implements Discountable {
         return amount;
     }
 
-    public double getPrice() {
+    public float getPrice() {
         return price;
     }
 
