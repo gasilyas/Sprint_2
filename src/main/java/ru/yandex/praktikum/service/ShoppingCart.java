@@ -9,32 +9,32 @@ public class ShoppingCart {
     }
 
     public float getOverallCost() {
-        float total = 0f;
+        float totalCost = 0f;
         for (int i = 0; i < groceries.length; i++) {
-           total += groceries[i].getPrice() * groceries[i].getAmount();
+            totalCost += groceries[i].getPrice() * groceries[i].getAmount();
         }
-        return total;
+        return totalCost;
     }
 
     public float getOverallCostWithDiscount() {
-        float total = 0f;
+        float totalCostDisc = 0f;
         for (int i = 0; i < groceries.length; i++) {
             float discount = groceries[i].getDiscount();
                 if (discount > 0) {
-                    total += groceries[i].getPrice() * groceries[i].getAmount() * (groceries[i].getDiscount() / 100);
+                    totalCostDisc += groceries[i].getPrice() * groceries[i].getAmount() * (groceries[i].getDiscount() / 100);
         }
     }
-        return total;
+        return totalCostDisc;
 }
 
     public float getOverallCostForVegetarian() {
-        float total = 0f;
+        float totalCostVeg = 0f;
         for (int i = 0; i < groceries.length; i++) {
             boolean isVegetarian = groceries[i].isVegetarian();
                 if (isVegetarian) {
-                total += groceries[i].getPrice() * groceries[i].getAmount();
+                    totalCostVeg += groceries[i].getPrice() * groceries[i].getAmount();
             }
         }
-        return total;
+        return totalCostVeg;
     }
 }
